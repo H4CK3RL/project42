@@ -1,0 +1,12 @@
+from tkinter import *  
+root = Tk()
+c = Canvas(root)
+c.pack()
+  
+fond = PhotoImage(file="téléchargement.png")
+bouton =Button(root, text="Quitter", command=exit)
+bouton.pack()
+
+c.create_image(100, 100, image=fond)
+
+root.mainloop()
